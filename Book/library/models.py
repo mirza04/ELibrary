@@ -6,7 +6,7 @@ class Book(models.Model):
     isbn = models.CharField(max_length=200)
     bookName = models.CharField(max_length=200)
     author = models.CharField(max_length=200)
-    description = models.CharField(max_length=200)
+    description = models.CharField(max_length=1000)
     page = models.CharField(max_length=200)
     publisher = models.CharField(max_length=200)
 
