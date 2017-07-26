@@ -2,7 +2,7 @@ from django.db import models
 
 class Book(models.Model):
 
-    imageId = models.FileField()
+    imageId = models.FileField(blank=True)
     isbn = models.CharField(max_length=200)
     bookName = models.CharField(max_length=200)
     author = models.CharField(max_length=200)
@@ -15,8 +15,9 @@ class Book(models.Model):
     numberOfCopys = models.IntegerField()
     MAX_COPYS = models.IntegerField()
 
-
-
-
     def __str__(self):
         return self.bookName
+
+
+
+

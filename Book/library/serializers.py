@@ -4,6 +4,7 @@ from rest_framework import routers, serializers, viewsets
 from .models import Book
 
 
+
 class UserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = User
@@ -18,5 +19,6 @@ class GroupSerializer(serializers.HyperlinkedModelSerializer):
 class BookSerializer(serializers.ModelSerializer):
     class Meta:
         model = Book
-        fields = ('imageId', 'isbn', 'bookName', 'author','description', 'page', 'publisher','rating','num_rating','isRated',
+        fields = ('id','imageId', 'isbn', 'bookName', 'author','description', 'page', 'publisher','rating','num_rating','isRated',
                   'numberOfCopys', 'MAX_COPYS')
+
