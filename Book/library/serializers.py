@@ -18,4 +18,5 @@ class GroupSerializer(serializers.HyperlinkedModelSerializer):
 class BookSerializer(serializers.ModelSerializer):
     class Meta:
         model = Book
-        fields = ('imageId', 'isbn', 'bookName', 'author','description', 'page', 'publisher')
+        fields = ('imageId', 'isbn', 'bookName', 'author','description', 'page', 'publisher','rating','num_rating','isRated',
+                  'numberOfCopys', 'MAX_COPYS')

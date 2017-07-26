@@ -24,7 +24,7 @@ SECRET_KEY = '3ca!)stcz!46v^0_n#smi9d-(v%3udoz-er2av04_&a8m^1zwa'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["192.168.14.2"]
+ALLOWED_HOSTS = ["159.107.166.7"]
 
 # Application definition
 
@@ -80,6 +80,7 @@ DATABASES = {
 }
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
+
 
     ],
     'PAGE_SIZE': 10
